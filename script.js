@@ -1,14 +1,11 @@
 function firstChar(text) {
-  // Remove leading and trailing spaces
-  const trimmedText = text.trim();
-  // Return the first character if the trimmed string is not empty, otherwise return an empty string
+  // Ensure text is defined and remove leading/trailing spaces
+  const trimmedText = text ? text.trim() : '';
+  // Return the first character of the trimmed string, or an empty string if the input is empty
   return trimmedText.length > 0 ? trimmedText[0] : '';
 }
 
-// Example usage
+// Do not change the code below
 // Uncomment the following line to show the prompt popup
 // const text = prompt("Enter text:");
-alert(firstChar(' Rosa Parks '));  // Output: 'R'
-alert(firstChar(' Hello World ')); // Output: 'H'
-alert(firstChar('   '));           // Output: ''
-alert(firstChar(''));              // Output: ''
+alert(firstChar(text));
