@@ -1,13 +1,8 @@
 function firstChar(text) {
-  // Remove leading and trailing spaces and iterate through the string
-  for (let char of text.trim()) {
-    // If the character is not a space, return it
-    if (char !== ' ') {
-      return char;
-    }
-  }
-  // If no valid character is found, return an empty string
-  return '';
+  // Remove leading and trailing spaces
+  const trimmedText = text.trim();
+  // Return the first character if the trimmed string is not empty, otherwise return an empty string
+  return trimmedText.length > 0 ? trimmedText[0] : '';
 }
 
 // Example usage
