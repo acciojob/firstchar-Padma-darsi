@@ -1,9 +1,9 @@
 function firstChar(text) {
   // your code here
 	// Trim leading/trailing whitespace and return the first character, if any
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== ' ') {
-      return str[i];
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] !== ' ') {
+      return text[i];
     }
   }
   return '';
